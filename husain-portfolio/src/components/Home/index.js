@@ -6,6 +6,7 @@ import LogoM from '../../assets/images/letter-m.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Layout from '../Layout'
+import Logo from './Logo'
 
 
 const Home = () => {
@@ -27,7 +28,13 @@ const Home = () => {
   ]
 
 
-  
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+}, []);
 
 
     return (
@@ -61,7 +68,7 @@ const Home = () => {
                 CONTACT ME
               </Link>
             </div>
-            
+            <Logo />
           </div>
     
           

@@ -9,7 +9,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Layout from '../Layout'
 import Logo from './Logo'
-import cv from '../../assets/Documents/resume.pdf'
+import resumePdf from '../../assets/Documents/resume.pdf'
+
 
 
 const Home = () => {
@@ -38,18 +39,19 @@ const Home = () => {
 
     return () => clearTimeout(timeoutId);
       }, []);
-    
+
       const handleDownload = () => {
-        // Create an anchor element
+        // Create a new anchor element
         const link = document.createElement('a');
-        link.href = {cv};
-        link.download = 'husain_cv.pdf';
-    
-        // Append the anchor to the document body and trigger the download
+        link.href = resumePdf;
+        link.target = '_blank'; // Opens the file in a new tab (optional)
+        link.download = 'husain_cv.pdf'; // Specifies the filename for the downloaded file
+      
+        // Append the anchor element to the DOM and simulate a click
         document.body.appendChild(link);
         link.click();
-    
-        // Remove the anchor element from the document after the download is triggered
+      
+        // Remove the anchor element from the DOM (optional)
         document.body.removeChild(link);
       };
 
@@ -58,7 +60,7 @@ const Home = () => {
         <Layout />
           <div className="container home-page">
             
-            <div className="text-zone">
+            <div className="text-zone">            
               <h1>
               <span className={letterClass}>H</span>
               <span className={`${letterClass} _12`}>i,</span>

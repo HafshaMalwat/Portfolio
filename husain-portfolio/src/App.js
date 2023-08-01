@@ -10,7 +10,7 @@ import About from './components/About';
 function App() {
   return (
     <>
-    <Routes>
+    <Routes basename="/Portfolio">
       <Route path="/" element={<Layout />} />
       <Route index element={<Home />}/>
       <Route path="about" element={<About />} />

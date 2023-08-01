@@ -61,10 +61,22 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
+  .anchor-icon{
+    margin-right: 8px;
+    color: #ffd700;    
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+
   .flat-button {
     color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
@@ -76,6 +88,12 @@
     white-space: nowrap;
 
     &:hover {
+      .anchor-icon{
+        background: #ffd700;
+      color: #333;
+      }
+      font-size: 15px;
+      font-weight: 500;
       background: #ffd700;
       color: #333;
     }

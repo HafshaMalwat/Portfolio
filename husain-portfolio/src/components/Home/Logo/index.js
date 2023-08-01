@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react'
+import img from '../../../assets/images/dp.jpg'
+import { Link } from 'react-router-dom'
 // import gsap from 'gsap-trial'
 // import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../../assets/images/logo-h.png'
@@ -38,33 +40,43 @@ const Logo = () => {
   // }, [])
 
   return (
-    <div className="logo-container" ref={bgRef}>
-      <img
-        className="solid-logo"
-        ref={solidLogoRef}
-        src={LogoS}
-        alt="JavaScript,  Developer"
-      />
-
-      <svg
-        width="559pt"
-        height="897pt"
-        version="1.0"
-        viewBox="0 0 559 897"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          className="svg-container"
-          transform="translate(0 457) scale(.1 -.1)"
-          fill="none"
-        >
-          <path
-            ref={outlineLogoRef}
-            d={Svgh}
-          />
-        </g>
-      </svg>
+    <div className="box">
+      <div className="content">
+        <img src={img}></img>
+        <h2>Husain Malwat<br /><span>IIT Gandhinagar</span></h2>        
+        <Link to="/contact" className="flat-button">
+                CONTACT ME
+              </Link>
+      </div>
     </div>
+    // <div className="logo-container" ref={bgRef}>
+      
+    //   <img
+    //     className="solid-logo"
+    //     ref={solidLogoRef}
+    //     src={LogoS}
+    //     alt="JavaScript,  Developer"
+    //   />
+
+    //   <svg
+    //     width="559pt"
+    //     height="897pt"
+    //     version="1.0"
+    //     viewBox="0 0 559 897"
+    //     xmlns="http://www.w3.org/2000/svg"
+    //   >
+    //     <g
+    //       className="svg-container"
+    //       transform="translate(0 457) scale(.1 -.1)"
+    //       fill="none"
+    //     >
+    //       <path
+    //         ref={outlineLogoRef}
+    //         d={Svgh}
+    //       />
+    //     </g>
+    //   </svg>
+    // </div>
   )
 }
 

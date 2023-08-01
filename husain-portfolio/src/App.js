@@ -10,12 +10,14 @@ import About from './components/About';
 function App() {
   return (
     <>
+    
     <Routes basename="/Portfolio">
-      <Route path="/" element={<Layout />} />
-      <Route index element={<Home />}/>
+      <Route exact path="/Portfolio" element={<Home />} />
+      
       <Route path="about" element={<About />} />
       
     </Routes>
+    
     </>
   );
 }

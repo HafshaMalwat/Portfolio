@@ -119,9 +119,9 @@ const Contact = () => {
           <span>husainmalwat@iitgn.ac.in</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[23.22446, 72.663186]} zoom={13} language="en">
+          <MapContainer center={[23.21136, 72.683186]} zoom={17} language="en">
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[23.21146, 72.684186]} icon={redIcon}>
+            <Marker position={[23.20980, 72.684697]} icon={redIcon}>
               <Popup>Husain lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>

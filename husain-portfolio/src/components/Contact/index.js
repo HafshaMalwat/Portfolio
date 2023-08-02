@@ -1,18 +1,22 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import Sidebar from '../SideBar'
 import Layout from '../Layout'
+import L from 'leaflet';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   // const form = useRef()
   const form = document.querySelector("form");
-  
+  const redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+  });
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -117,7 +121,7 @@ const Contact = () => {
         <div className="map-wrap">
           <MapContainer center={[23.22446, 72.663186]} zoom={13} language="en">
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[23.21146, 72.684186]}>
+            <Marker position={[23.21146, 72.684186]} icon={redIcon}>
               <Popup>Husain lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>

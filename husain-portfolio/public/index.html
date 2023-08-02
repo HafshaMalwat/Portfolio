@@ -24,7 +24,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Husain Malwat:Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,7 +43,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!-- emailjs -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      emailjs.init('XabGp7H0-P3FjxiGS')
+    </script>
 
 
 

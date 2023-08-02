@@ -24,12 +24,13 @@ const Contact = () => {
   }, []);
 
   emailjs.init("XabGp7H0-P3FjxiGS");
-
+  const serviceID = 'default_service';
+  const templateID = 'template_ndvayt6';
   
   function sendEmail(event) {
     event.preventDefault();
     emailjs
-      .sendForm("service_7m1n7dj", "template_ndvayt6", form)
+      .sendForm(serviceID, templateID, form)
       .then(
         function (response) {
           console.log("Email sent successfully!", response);
@@ -114,9 +115,9 @@ const Contact = () => {
           <span>husainmalwat@iitgn.ac.in</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={5} language="en">
+          <MapContainer center={[23.22446, 72.663186]} zoom={13} language="en">
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[23.2199, 72.6847]}>
+            <Marker position={[23.21146, 72.684186]}>
               <Popup>Husain lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>

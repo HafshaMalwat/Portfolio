@@ -1,4 +1,4 @@
-import '../../../assets/css/simplebar.css'
+
 import { useEffect, useRef } from 'react'
 import img from '../../../assets/images/dp.jpg'
 import { Link } from 'react-router-dom'

@@ -108,7 +108,7 @@
   
   .info-map {
     position: absolute;
-    background: #000;
+    background: rgba(0, 0, 0, 0.6);
     top: 50px;
     right: 31%;
     z-index: 999999;
@@ -144,13 +144,18 @@
   @media screen and (max-width: 1200px) {
     .map-wrap {
       float: none;
-      margin: 0;
-      width: 100%;
+      margin: 3%;
+      width: 94%;
       height: 400px;
     }
   
     .info-map {
-      display: none;
+      position: relative;
+      float: none;
+      top: 5%;
+      right: 1%;
+      width: 82%;      
+      margin: 5%;
     }
   }
  

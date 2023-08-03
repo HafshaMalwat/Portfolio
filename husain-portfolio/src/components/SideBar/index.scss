@@ -110,6 +110,9 @@
       svg {
         color: #ffd700;
       }
+      &:after {
+        color: #ffd700;
+      }
     }
   }
 
@@ -127,7 +130,7 @@
       a {
         padding: 7px 0;
         display: block;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 16px;
         color: #4d4d4e;
       }
@@ -195,6 +198,16 @@
 
       &.mobile-show {
         display: block;
+        position: fixed;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 0%;
+        margin-left: 85%;
+        padding-top: 15%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-radius: 10px;
+        
       }
 
       a {
@@ -205,6 +218,7 @@
       }
 
       a:after {
+        display: none;
         opacity: 1;
         position: initial;
         width: auto;
@@ -276,6 +290,15 @@
 
       &.mobile-show {
         display: block;
+        position: fixed;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 0%;
+        margin-left: 85%;
+        padding-top: 15%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-radius: 10px;        
       }
 
       a {
@@ -286,6 +309,7 @@
       }
 
       a:after {
+        display: none;
         opacity: 1;
         position: initial;
         width: auto;

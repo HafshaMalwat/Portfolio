@@ -10,6 +10,7 @@ import './index.scss'
 import Layout from '../Layout'
 import Logo from './Logo'
 import resumePdf from '../../assets/Documents/resume.pdf'
+import Sidebar from '../SideBar';
 
 
 
@@ -57,6 +58,8 @@ const Home = () => {
 
     return (
         <>
+        {/* <Sidebar/> */}
+        
         <Layout />
           <div className="container home-page">
             

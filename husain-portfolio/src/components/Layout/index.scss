@@ -169,3 +169,27 @@
     overflow: visible;
   }
 }
+
+
+.cs-main-container{
+  font-size: 1.4em;
+}
+
+
+.chatbot-container {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px; /* Adjust the distance from the right */
+  z-index: 2; /* Ensure ChatBot is on top of the other content */
+  background-color: #f0f0f0; /* Background color */
+  padding: 10px; /* Padding */
+  border-radius: 10px; /* Rounded border */
+}
+.cs-message--outgoing .cs-message__content{
+  border-radius: 0.7em 0.7em 0 0.7em;
+}
+
+.cs-message__content{
+  border-radius: 0 0.7em 0.7em 0.7em;
+  text-align: -webkit-left;
+}

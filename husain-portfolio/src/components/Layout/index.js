@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../SideBar/'
+import ChatBot from '../ChatBot'
 import './index.scss'
 
 const Layout = () => {
@@ -10,7 +11,9 @@ const Layout = () => {
       <Sidebar />
       
       <div className="page">
-        
+      <div className="chatbot-container">
+          <ChatBot />
+        </div>
         <span className="tags top-tags">
           &lt;html&gt;
           <br />

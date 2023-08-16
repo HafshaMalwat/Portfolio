@@ -6,6 +6,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Layout from '../Layout'
 import L from 'leaflet';
+import Sidebar from '../SideBar'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -54,6 +55,7 @@ const Contact = () => {
 
   return (
     <>
+    {/* <Sidebar/> */}
     <Layout />
       <div className="container contact-page">
         <div className="text-zone">

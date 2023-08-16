@@ -239,6 +239,34 @@
         display: block;
      }
   }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 20px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: #ffd700;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 400px) {

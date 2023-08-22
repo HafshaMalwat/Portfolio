@@ -1,19 +1,22 @@
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../SideBar/'
 import ChatBot from '../ChatBot'
+import SupportEngine from '../SupportEngine'
 import './index.scss'
 
 const Layout = () => {
   return (
     
     <div className="App">
-      
+      <div className="chatbot-container">
+          {/* <ChatBot /> */}
+          <SupportEngine />
+        </div>
       <Sidebar />
       
       <div className="page">
-      <div className="chatbot-container">
-          <ChatBot />
-        </div>
+      
+        
         <span className="tags top-tags">
           &lt;html&gt;
           <br />

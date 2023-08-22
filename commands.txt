@@ -10,3 +10,10 @@ npm i react-leaflet
 npm i react-loaders
 npm i react-router-dom
 npm i sass
+
+
+# COMMAND TO BUILD PROJECT
+npm run deploy
+
+#COMMAND TO RUN PROJECT
+npm start

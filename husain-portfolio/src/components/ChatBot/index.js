@@ -7,7 +7,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 function ChatBot(){
     const [count, setCount] = useState(0)
     const [isTyping, setIsTyping] = useState(false);
-    const API_KEY = "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";
+    const API_KEY = "API Key";
     const systemMessage = 
     { 
         //  Explain things like you're talking to a software professional with 5 years of experience.
@@ -102,8 +102,10 @@ function ChatBot(){
     
 
     return (
-        <div className='ChatBot'>
-            <div style={{ position:"relative", height: "100%", width: "300px"  }}>
+        <div className='ChatBot' style={{
+          height: '-webkit-fill-available'
+      }}>
+            {/* <div style={{ position:"relative", height: "100%", width: "300px"  }}> */}
         <MainContainer>
           <ChatContainer>       
             <MessageList 
@@ -118,7 +120,7 @@ function ChatBot(){
             <MessageInput placeholder="Type message here" onSend={handleSend} />        
           </ChatContainer>
         </MainContainer>
-      </div>
+      {/* </div> */}
 
         </div>
     )
